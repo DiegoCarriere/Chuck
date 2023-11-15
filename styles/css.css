@@ -1,0 +1,277 @@
+@font-face {
+  font-family: amita-regular;
+  src: url("amita-regular.ttf");
+}
+
+h3 {
+  border: 1px solid #CCCCCC;
+  padding: 10px;
+  font-style:italic;
+  color:blue;
+  text-align: center;
+}
+h2{
+  font-family: amita-regular;
+  text-align: center;
+}
+p {
+  margin: 30px;
+  line-height: 150%;
+  text-indent: 5px;
+}
+body {
+  margin: auto; /*td6*/
+  background-color:#838892;
+  width:100%; /*td6 100%*/ /*exo11 passe de 600px à 900px*/
+  min-width: 320px; /*td6*/
+}
+title {
+  text-align: center;
+}
+
+
+.pair {
+  background-color:#5BBDBF;
+}
+.impair {
+  background-color:#FF5850;
+}
+
+.skill {
+  height: 200px;
+  color: #EC4329;
+  font-style: oblique;
+}
+.plain {
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color:#FF5850; /*exo 14 pas de soulignement liens */
+}
+a {
+  text-decoration:none; /*exo 14 pas de soulignement liens */
+
+}
+.adrs {
+  font-family: amita-regular;
+  text-align: center;
+  font-size: 20px;
+}
+thead {
+  background-color:#00AAFF;
+}
+tbody.skill {
+  color: #640051;
+}
+.tabpair {
+  background-color: #FFF;
+}
+.tabimpair {
+  background-color: #CCC;
+}
+#strong {
+  margin: auto;
+}
+table .skill {
+  padding: 0 5px;
+}
+#marge {
+  margin: 0 5px 0 0;
+  float: left;
+  height: 150px;
+}
+#beware {
+  margin: 0 5px 0 0;
+  float: right;
+  width:80%;  /*exo11 avant 300px*/ /*td6 80%*/
+}
+#clear {
+  clear: left;
+}
+#facebook {
+  position: fixed;
+  bottom: 5%;
+  right: 4%;
+}
+#twitter {
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+}
+
+nav {
+  /*width:75%; /*exo3 nav plus petit / suppr td6*/
+  margin:0 auto; /*exo3 centrer le nav*/
+  height: 50px; /*exo4 hauteur de 50px pour nav*/ /*200px provisoire*/
+  display: flex; /*exo7*/
+  flex-direction:row ;/*exo7*/
+  /*background-color: #FF00FF; temporaire*/
+  align-items: stretch; /*exo8*/
+  justify-content: flex-end; /*exo9*/
+}
+nav > div {
+  display: flex;/*exo4 temporaire avant flex */ /*display flex exo8*/
+  background-color: #5BBDBF;/*exo3 couleur fond menu*/
+  position: relative;/*exo5 positionner pour que le sub menu se place dessous*/
+  align-items: center; /*exo8*/
+}
+nav a {
+  /*background-color: #c0d5c2;exo3 couleur text menu*/ /*exo 10 enlevé*/
+  padding: 0 10px; /*exo4 marge de 10px horizontal*/
+}
+.border {
+  border-left: 2px solid black;/*exo4 bordure noir à gauche*/
+}
+.submenu {
+  position: absolute;/*exo5 sous-menus n'est pas pris en compte par la page*/
+  top: 50px; /*bottom temporaire bottom 200px*//*exo5 top 50px*/
+  left: 0;/*exo5*/
+  background-color: #aca;/*exo6 couleur de fond des submenu*/
+  display: none;/*exo6 n'est pas affiché si on est pas dessus*/
+}
+nav > div:hover .submenu {
+  display: block; /*exo6 visibilité du submenu*/
+}
+nav div {
+  width: 100px; /*exo7 aligner les menus et sous menus*/
+}
+header {
+  display: flex; /*exo10 en ligne menu et quote*/
+  align-items:flex-end; /*exo10 aligné vers le bas*/
+  justify-content: flex-start; /*td6*/
+  /*background-color: white;/*exo10 fond blanc du header*/
+}
+
+main {
+  display: flex; /*exo11 mettre deux colonne <article> et <aside>*/
+}
+aside {
+  flex-shrink: 1; /*td6*/
+  flex-grow: 1;/*td6*/
+  width: 200px;/*td6*/
+  max-width: 250px; /*td6*/
+  min-width: 150px; /*td6*/
+  /*width: 33%;/*exo11 */ /*td6*/
+  margin-left:5%; /*exo11 */ /*td6 annulé/remis*/
+  background-color: #CCC; /*exo11 */
+}
+article {
+  flex-shrink: 3;/*td6*/
+  flex-grow: 3;/*td6*/
+  width: 300px;/*td6*/
+  max-width: 500px; /*td6*/
+  min-width: 200px; /*td6*/
+  /*width: 67%; /*exo11 */ /*td6 */
+  background-color: #CCC; /*exo11 */
+  margin: auto;
+}
+
+table {
+  display: block; /*exo12 barre de défilement*/
+  overflow-x: scroll; /*exo12 barre de défilement*/
+  border-spacing:0;/*exo13 pas de bordure*/
+}
+table tr.tabimpair > td:first-child {
+  position: sticky;/*exo13 barre du tableau a gauche fixé*/
+  left:1px;/*exo13 */
+  background-color:#CCC;/*exo13 fond de la barre a gauche*/
+  border-right: 2px solid black ;/*exo13*/
+
+}
+table tr.tabpair > td:first-child {
+  position: sticky;/*exo13 barre du tableau a gauche fixé*/
+  left:1px;/*exo13 */
+  background-color: #FFF; /*exo13 fond de la barre a gauche*/
+  border-right: 2px solid black ;/*exo13*/
+}
+table tr > th:first-child {
+  position: sticky;/*exo13 */
+  left:1px;/*exo13 */
+  background-color:#00AAFF;/*exo13 fond de la barre a gauche*/
+  border-right: 2px solid black ;/*exo13*/
+}
+td {
+  text-align: center; /*pour centrer les element du tableau*/
+}
+.puce {
+  visibility:hidden
+}
+nav > div > div > div:hover span.puce {
+  visibility: visible;
+}
+fieldset {
+  display: flex; /*TD5 */
+  flex-direction: column;/*TD5 */
+  justify-content: space-evenly;
+}
+fieldset > div {
+  display: flex; /*TD5 */
+  flex-direction: column;/*TD5 */
+}
+
+
+form >div {
+  display: flex;/*TD5 */
+  flex-direction: row;/*TD5 */
+  justify-content: space-evenly;/*TD5 */
+  background-color: darkgray;/*TD5 */
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+blockquote {
+  margin: 1%;
+}
+/*
+Les textes avec des balises "h3" sont bleus et en italique
+ */
+
+@media(max-width: 768px) { /*td6*/
+  table{
+    position: fixed;
+    visibility: hidden;
+  }
+  blockquote {
+    position: fixed;
+    visibility: hidden;
+  }
+}
+@media(max-width: 480px) { /*td6*/
+  main {
+    flex-direction: column;
+  }
+  nav {
+    visibility: hidden;
+  }
+  div.burger {
+  visibility: visible;
+  }
+  aside {
+    margin: auto;
+  }
+}
+
+.burger {/*td6*/
+  visibility: hidden;
+  position: fixed;
+  top:0;
+  left:5%;
+  z-index: 5;
+}
+
+div.burger div {/*td6*/
+  display: none;
+}
+div.burger:hover div{/*td6*/
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  background-color: #CCCCCC;
+}
+div.burger a {
+  margin: auto;
+}

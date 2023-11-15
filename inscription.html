@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Le site non officiel de Chuck Norris</title>
+		<link rel="stylesheet" type="text/css" href="styles/css.css">
+	</head>
+
+	<body>
+			<form action="sendToMySecondYear.php" method="get">
+				<div>
+				<fieldset>
+					<legend>Informations personnelles</legend>
+						<div>
+							<label for ="nom" >Nom*</label>
+							<input id="nom" name="nom" type="text" required>
+						</div>
+						<div>
+							<label for="prénom">Prénom</label>
+							<input id="prénom" name="prenom" type="text">
+						</div>
+						<div>
+							<label>Sexe : </label>
+							<div>
+								<label for="Sexe1">Homme</label>
+								<input id="Sexe1" name="Sexe" type="radio">
+							</div>
+							<div>
+								<label for="Sexe2">Femme</label>
+								<input id="Sexe2" name="Sexe" type="radio">
+							</div>
+
+						</div>
+						<div>
+							<label for="date">Date de naissance</label>
+							<input id="date" name="date" type="date">
+						</div>
+						<div>
+							<label for="email" >Email*</label>
+							<input id="email" name="email" type="email" placeholder="yourmail@domain.com" required>
+						</div>
+				</fieldset>
+				<fieldset>
+					<legend>Les sports de combat</legend>
+						<div>
+							<label for="combat" >Arts-martiaux </label>
+							<select id="combat" name="art" value="Kung fu" multiple="multiple">
+								<option value="kf" >Kung Fu</option>
+								<option value="ka" >Karaté</option>
+								<option value="fc" >Full-contact</option>
+								<option value="Tae" >Taekwendo</option>
+								<option value="ckd" >Chun kuk do</option>
+							</select>
+						</div>
+						<div>
+							<label for="lvlkarate">Niveau en karaté</label>
+							<input id="lvlkarate" name="lvl" type="number" min="0" max="5" placeholder="de 0 à 5">
+						</div>
+				</fieldset>
+				<fieldset>
+					<legend>Inscription</legend>
+					<div>
+
+						<div>
+							<label>Niveau d'engagement : </label>
+						</div>
+						<div>
+							<label for="basique">Basique (5€)</label>
+							<input id="basique" name="engage" type="radio">
+						</div>
+						<div>
+							<label for="gold">Gold (15€)</label>
+							<input id="gold" name="engage" type="radio">
+						</div>
+						<div>
+							<label for="tatane">TATANE IN YOUR FACE (50€)</label>
+							<input id="tatane" name="engage" type="radio">
+						</div>
+					</div>
+						<div>
+							<label for="clauses">J'ai bien lu les clauses inexistantes*</label>
+							<input id="clauses" name="clauses" type="checkbox" required>
+						</div>
+						<div>
+							<label for="origine">Pays d'origine</label>
+							<select id="origine" name="origine" value="fr">
+								<option value="fr">France</option>
+								<option value="US">USA</option>
+								<option value="Ch">Chine</option>
+								<option value="Viet">Viêt Nam</option>
+							</select>
+						</div>
+
+						<div>
+							<label for="libre" >Message à Chuck</label>
+							<textarea id="libre" name="msg" placeholder="Un inscrit sera tiré au sort, et verra son message transmis à Chuck Norris"></textarea>
+						</div>
+						<div>
+							<label for="mdp">Mot de passe*</label>
+							<input id="mdp" name="mdp" type="password" required pattern="[a-z0-9._-]{8,}">
+						</div>
+				</fieldset>
+				</div>
+				<div>
+					<input type="submit" value="Envoyer" >
+				</div>
+			</form>
+
+
+			</form>
+			<div><a href="./index.html">Accueil</a></div>
+</body>
+</html>
